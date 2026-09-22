@@ -87,7 +87,7 @@ const VideoCarousel = () => {
             });
 
             gsap.to(span[videoId], {
-              backgroundColor: "#afafaf",
+              backgroundColor: "#0a0a0a",
             });
           }
         },
@@ -172,12 +172,12 @@ const VideoCarousel = () => {
       </div>
 
       <div className="flex-center relative mt-10">
-        <div className="flex-center rounded-full bg-gray-300 px-7 py-5 backdrop-blur">
+        <div className="flex-center rounded-full bg-black border border-[#1a1a1a] px-7 py-5 backdrop-blur">
           {videoRef.current.map((_, i) => (
             <span
               key={i}
               ref={(el) => (videoDivRef.current[i] = el)}
-              className="relative mx-2 size-3 cursor-pointer rounded-full bg-gray-200"
+              className="relative mx-2 size-3 cursor-pointer rounded-full bg-[#0a0a0a]"
             >
               <span
                 className="absolute size-full rounded-full"
